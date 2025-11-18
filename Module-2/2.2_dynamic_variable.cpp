@@ -1,8 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+int *p;
+void fun(){
+    // int x = 10;
+    int* x = new int;
+    *x = 21;
+    p = x;
+    cout << "Fun => " << *p << endl;
+    return;
+}
+
+
 int main(){
-    int *p = new int;
-    *p = 199;
-    cout << *p << endl;
+    fun();
+    cout << "Main => " << *p << endl;
     return 0;
 }
+
