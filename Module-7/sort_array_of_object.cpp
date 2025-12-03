@@ -18,12 +18,26 @@ bool cmp(Student std1, Student std2)
     // {
     //     return true;
     // }
-    // else
+    // else if (std1.marks < std2.marks)
     // {
     //     return false;
     // }
+    // else
+    // {
+    //     if (std1.roll < std2.roll)
+    //     {
+    //         return true;
+    //     }
+    //     else
+    //     {
 
-    return std1.marks >= std2.marks; // shortcut similar to JS sort
+    //         return false;
+    //     }
+    // }
+
+    return (std1.marks == std2.marks ? std1.roll < std2.roll : std1.marks > std2.marks);
+
+    // return std1.marks >= std2.marks; // shortcut similar to JS sort
 }
 
 int main()

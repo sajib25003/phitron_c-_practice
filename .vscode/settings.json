@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "*.ejs": "html",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string": "cpp",
+        "flat_map": "cpp",
+        "flat_set": "cpp",
+        "random": "cpp"
     }
 }
